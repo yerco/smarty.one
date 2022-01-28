@@ -1,11 +1,12 @@
 {* Smarty *}
+{config_load file="include/configs/site.conf"}
 <!DOCTYPE html>
 <html>
     <head>
-        <title>PHP Arrays</title>
+        <title>{#site_title#}</title>
         <meta charset="utf-8">
     </head>
     <body>
-        Body moving {$varia}
+        Body moving {$nombre}
     </body>
 </html>
