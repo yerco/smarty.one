@@ -9,8 +9,10 @@ ErrorHandler::SetHandler();
 require_once PRESENTATION_DIR . 'application.php';
 
 $application = new Application();
-
-$application->assign('nombre', 'chages great');
+$application->force_compile = true;
+$application->compile_check = true;
+//$application->testInstall();
+$application->assign('nombre', 'that was it');
 
 $application->display('index.tpl');
 
